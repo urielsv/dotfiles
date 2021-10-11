@@ -1,0 +1,83 @@
+#Alacritty.yml
+#Author urielsv
+#Last update: 10/10/21 (DD/MM/YY)
+#Updates @ https://github.com/urielsv/dotfiles
+
+#Beggining of alacritty.yml config file.
+
+# Environment
+env:
+  TERM: alacritty #$TERM = alacritty
+
+# Window config
+window:
+  padding:
+    x: 10
+    y: 10
+  decorations: none
+  title: Alacritty
+  dynamic_title: true #Change title dynamically.
+  class:
+    general: Alacritty
+
+# Scrolling type
+scrolling:
+  history: 0 #Scrollback buffer
+  multiplier: 1 #Scroll x lines @ time
+
+# Font config
+font:
+  normal:
+   family: Mx437 IBM EGA 9x14
+   style: Regular
+  size: 16.0
+
+# Colors (Dracula themed)
+colors:
+  primary:
+    background: '#181920'
+    foreground: '#ffffff'
+  cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  vi_mode_cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  selection:
+    text: CellForeground
+    background: '#4c566a'
+  search:
+    matches:
+      foreground: CellBackground
+      background: '#88c0d0'
+    bar:
+      background: '#434c5e'
+      foreground: '#d8dee9'
+  normal:
+    black: '#44475a'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#6272a4'
+    magenta: '#bd93f9'
+    cyan: '#8be9fd'
+    white: '#f8f8f2'    
+
+# Background opacity
+background_opacity: 1.0
+
+# Key bindings
+key_bindings:
+  - { key: Plus,  mods: Control|Shift, action: IncreaseFontSize }
+  - { key: Minus, mods: Control|Shift, action: DecreaseFontSize }
+  - { key: Q,     mods: Control,       action: Quit }
+
+# Debug
+debug:
+  persistent_logging: false
+  log_level: Warn
+  print_events: false
+
+# Misc
+selection:
+  save_to_clipboard: true
