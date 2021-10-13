@@ -41,7 +41,8 @@ static const char *tags[] = { "1", "2", "3", "4", "5" };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
-    { "st",     NULL,       NULL,       0,            1,           -1 },
+    { "discord",    NULL,     NULL,       0,            0,            2 },
+    { "spotify",    NULL,     NULL,       0,            0,            2 },
 };
 
 /* layout(s) */

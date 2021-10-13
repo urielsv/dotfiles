@@ -4,7 +4,7 @@
 "Updates @ https://github.com/urielsv/dotfiles
 
 """"""""""""""""""""""""""""""""""""
-"Beggining of init.vim config file."
+"Beginning of init.vim config file."
 """"""""""""""""""""""""""""""""""""
 
 " IMPORT CONFIG PATHS

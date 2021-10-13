@@ -21,4 +21,4 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "New terminal below
-nnoremap <C-t> :split term://$BASH<cr>:set nonumber<cr>:set modifiable<cr>:resize 5<cr><cr>
+nnoremap <C-t> :split term://$BASH<cr>:set nonumber<cr>:set modifiable<cr>:resize 10<cr>:a<cr>

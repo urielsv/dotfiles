@@ -7,10 +7,16 @@
 # Beggining of .bashrc config file. #
 #####################################
 
+# Return if not interactive
 [[ $- != *i* ]] && return
 
 
 use_color=true
+
+# Exports
+export EDITOR="nvim"
+export TERM="alacritty"
+export BROWSER="chromium"
 
 
 # Colors!
@@ -39,8 +45,9 @@ alias free='free -m' # show sizes in MB
 alias ls='ls -h --color=auto' #human-readable sizes
 alias egrep='egrep --color=auto'
 alias vim='nvim'
-
-
+alias pac="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo
+pacman -S" #Use FZF and more into to pacman packages
+alias fyay="yay -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro yay -S"
 xhost +local:root > /dev/null 2>&1
 
 shopt -s checkwinsize
