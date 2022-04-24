@@ -40,6 +40,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hrsh7th/nvim-compe'
 
+" Float Terminal
+Plug 'voldikss/vim-floaterm'
+
 call plug#end()
 
 " Automatic working dir

@@ -22,7 +22,7 @@ window:
 
 # Scrolling type
 scrolling:
-  history: 0 #Scrollback buffer
+  history: 10000 #Scrollback buffer
   multiplier: 1 #Scroll x lines @ time
 
 # Font config
