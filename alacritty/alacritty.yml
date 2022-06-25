@@ -3,7 +3,7 @@
 #Last update: 10/10/21 (DD/MM/YY)
 #Updates @ https://github.com/urielsv/dotfiles
 
-#Beggining of alacritty.yml config file.
+#Beginning of alacritty.yml config file.
 
 # Environment
 env:
@@ -28,24 +28,24 @@ scrolling:
 # Font config
 font:
   normal:
-   family: Mx437 IBM EGA 9x14
+   family: Misc Fixed 
    style: Regular
-  size: 16.0
+  size: 30.0
 
-# Colors (Dracula themed)
+# Colors 
 colors:
   primary:
-    background: '#181920'
-    foreground: '#ffffff'
+    background: '#ffffff'
+    foreground: '#000000'
   cursor:
-    text: '#2e3440'
-    cursor: '#d8dee9'
+    text: '#000000'
+    cursor: '#b266ff'
   vi_mode_cursor:
-    text: '#2e3440'
-    cursor: '#d8dee9'
+    text: '#000000'
+    cursor: '#b266ff'
   selection:
     text: CellForeground
-    background: '#4c566a'
+    background: '#ffcce5'
   search:
     matches:
       foreground: CellBackground
@@ -54,17 +54,17 @@ colors:
       background: '#434c5e'
       foreground: '#d8dee9'
   normal:
-    black: '#44475a'
-    red: '#ff5555'
-    green: '#50fa7b'
-    yellow: '#f1fa8c'
-    blue: '#6272a4'
-    magenta: '#bd93f9'
-    cyan: '#8be9fd'
-    white: '#f8f8f2'    
+    black: '#000000'
+    red: '#ff0000'
+    green: '#00ff00'
+    yellow: '#ffff00'
+    blue: '#0000ff'
+    magenta: '#7f00ff'
+    cyan: '#ff00ff'
+    white: '#fafafa'    
 
 # Background opacity
-background_opacity: 1.0
+window.opacity: 0.7
 
 # Key bindings
 key_bindings:
