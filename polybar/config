@@ -27,7 +27,7 @@ font-2 = "FontAwesome6BrandsRegular:style=Solid:pixelsize=10:antialiases=true:si
 
 modules-left = bspwm
 modules-center = time 
-modules-right = pulseaudio date battery
+modules-right = pulseaudio spotify date battery
 
 tray-position = right
 tray-padding = 2
@@ -100,6 +100,18 @@ label-empty-padding = 1
 
 ; Separator in between workspaces
 ; label-separator = |
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = ""
+format = <label> | 
+exec = python $HOME/.config/polybar/polybar-spotify/spotify_status.py* -t 20 -f '{artist}: {song}'
+format-underline = ${colors.primary}
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous 
 
 [module/cpu]
 type = internal/cpu
