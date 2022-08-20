@@ -48,7 +48,7 @@ element-icon {
 }
 
 entry {
-  background-color: @bg-alt;
+  background-color: @bg;
   padding: 12;
   text-color: @primary;
 }

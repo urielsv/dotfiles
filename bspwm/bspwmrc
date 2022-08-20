@@ -1,5 +1,5 @@
 #! /bin/sh
-
+# Only for 1 monitor
 pgrep -x sxhkd > /dev/null || sxhkd &
 feh --bg-scale ~/.config/background.png
 ${HOME}/.config/polybar/launch.sh
