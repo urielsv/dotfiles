@@ -1,6 +1,6 @@
 #.bashrc
 #Author: urielsv
-#Last update: 11/10/21 (DD/MM/YY)
+#Last update: 20/08/22 (DD/MM/YY)
 #Updates @ https://github.com/urielsv/dotfiles
 
 #####################################
@@ -31,7 +31,7 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\u@\h \w \$ '
 	else
-		PS1='\[\033[01;35m\][\u \[\033[01;32m\]\W\[\033[01;35m\]]\[\033[01;37m\]\$\[\033[00m\] '
+        PS1='\[\033[01;36m\]\u@\h\[\033[01;32m\] \w \$\[\033[00m\] '
 	fi
 fi
 
