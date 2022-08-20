@@ -5,7 +5,7 @@ let mapleader = " "
 nnoremap <C-s> :w<CR>
 
 "NERDTree
-nnoremap <C-\> :NERDTreeToggle <CR>
+nnoremap <leader>\ :NERDTreeToggle <CR>
 
 "FZF
 nnoremap <leader>f :FZF<CR>

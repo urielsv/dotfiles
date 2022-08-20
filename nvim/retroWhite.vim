@@ -18,7 +18,7 @@ set background=light
 	" Text; Miscellaneous
 	hi Normal         guibg=#FFFFFF guifg=#000000 gui=none
 	hi SpecialKey     guibg=#FFFFFF guifg=#E783E9 gui=none
-	hi VertSplit      guibg=#FFFFFF guifg=#FFEE68 gui=none
+	hi VertSplit      guibg=#FFFFFF guifg=#E783E9 gui=none
 	hi SignColumn     guibg=#FFFFFF guifg=#BF81FA gui=none
 	hi NonText        guibg=#FFFFFF guifg=#FC6984 gui=none
 	hi Directory      guibg=#FFFFFF guifg=#FFEE68 gui=none 
@@ -61,18 +61,18 @@ set background=light
 	" Code
 	hi Comment        guibg=#FFFFFF guifg=#FC6980 gui=none
 	hi Constant       guibg=#FFFFFF guifg=#00FF00 gui=bold
-	hi String         guibg=#FFFFFF guifg=#8000FF gui=none
+	hi String         guibg=#FFFFFF guifg=#7F00FF gui=none
 	hi Error          guibg=#FFFFFF guifg=#FF0000 gui=none
 	hi Identifier     guibg=#FFFFFF guifg=#FF00FF gui=none
-	hi Function       guibg=#FFFFFF guifg=#90CBF1 gui=bold
+	hi Function       guibg=#FFFFFF guifg=#FF0000 gui=bold
 	hi Ignore         guibg=#FFFFFF guifg=#2B2B2B gui=none
 	hi MatchParen     guibg=#8800FF guifg=#000000 gui=none
-	hi PreProc        guibg=#FFFFFF guifg=#FF00FF gui=bold
+	hi PreProc        guibg=#FFFFFF guifg=#7F00FF gui=bold
 	hi Special        guibg=#FFFFFF guifg=#000000 gui=bold
 	hi Todo           guibg=#FFFFFF guifg=#FF0000 gui=bold
 	hi Underlined     guibg=#FFFFFF guifg=#FF0000 gui=underline
 	hi Statement      guibg=#FFFFFF guifg=#FF00FF gui=bold
 	hi Operator       guibg=#FFFFFF guifg=#FC6984 gui=none
 	hi Delimiter      guibg=#FFFFFF guifg=#FC6984 gui=none
-	hi Type           guibg=#FFFFFF guifg=#0060FF gui=bold
+	hi Type           guibg=#FFFFFF guifg=#0000FF gui=bold
 	hi Exception      guibg=#FFFFFF guifg=#FF0000 gui=none

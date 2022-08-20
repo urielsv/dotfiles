@@ -14,6 +14,8 @@ source $HOME/.config/nvim/mappings.vim
 " PLUGINS!
 call plug#begin()
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " Discord Rich Presense (Show you're using vim)
 Plug 'vimsence/vimsence'
 
@@ -27,9 +29,6 @@ Plug 'junegunn/fzf.vim'
 " Syntax checking
 Plug 'vim-syntastic/syntastic'
 
-" Dracula theme
-Plug 'dracula/vim'
-
 " Display HEX color codes
 Plug 'lilydjwg/colorizer'
 
@@ -37,13 +36,23 @@ Plug 'lilydjwg/colorizer'
 Plug 'itchyny/lightline.vim'
 
 " LSP Config and autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hrsh7th/nvim-compe'
+
+" Color scheme - Polar
+Plug 'NLKNguyen/papercolor-theme'
 
 " Float Terminal
 Plug 'voldikss/vim-floaterm'
 
 call plug#end()
+
+" Enable treesitter hl
+"augroup ts_start 
+"    autocmd!
+"    au BufReadPost  *.c,*.java :TSEnable highlight
+"augroup end
+
 
 " Automatic working dir
 set autochdir
@@ -61,24 +70,19 @@ set shiftwidth=4
 set textwidth=80
 set autoindent
 
-set number
-
-" Theme configs
-colorscheme dracula
-let g:dracula=256
+set number relativenumber
 
 set t_Co=256
 if &t_Co > 2
     syntax on
 endif
+
 set termguicolors
-
-hi Normal ctermbg=Black
-hi Normal ctermfg=White
-hi LineNr guifg=#55eca3
-hi Comment guifg=#4f4f4f
-hi! Normal guibg=#181920
-
+set background=light
+colorscheme PaperColor
+hi Normal guibg=#FFFFFF
+hi LineNr guibg=#FFFFFF
+hi LineNr guifg=#000000
 " Vimsense options
 let g:vimsence_small_text = 'Neovim'
 let g:vimsence_small_image = 'neovim'
