@@ -54,6 +54,7 @@ call plug#end()
 "augroup end
 
 
+
 " Automatic working dir
 set autochdir
 
@@ -78,11 +79,17 @@ if &t_Co > 2
 endif
 
 set termguicolors
-set background=light
-colorscheme PaperColor
-hi Normal guibg=#FFFFFF
-hi LineNr guibg=#FFFFFF
-hi LineNr guifg=#000000
+fu ToggleColorscheme()
+    if (&background=="light")
+        colorscheme koehler
+        hi LineNr guifg=#FF00FF gui=bold
+    elseif (&background=="dark")
+        colorscheme PaperColor
+        set background=light
+    endif
+ endf
+
+colorscheme koehler
 " Vimsense options
 let g:vimsence_small_text = 'Neovim'
 let g:vimsence_small_image = 'neovim'
@@ -91,7 +98,7 @@ let g:vimsence_editing_state = 'Workspace: {}'
 
 " Config type for status mode
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'simpleblack',
       \ }
 
 " NerdTree
