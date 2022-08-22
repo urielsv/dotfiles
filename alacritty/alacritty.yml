@@ -1,6 +1,6 @@
 #Alacritty.yml
 #Author urielsv
-#Last update: 20/08/22 (DD/MM/YY)
+#Last update: 21/08/22 (DD/MM/YY)
 #Updates @ https://github.com/urielsv/dotfiles
 
 #Beginning of alacritty.yml config file.
@@ -13,7 +13,8 @@ env:
 window:
   padding:
     x: 10
-    y: 10
+    y: 10 
+  opacity: 0.75
   decorations: none
   title: Alacritty
   dynamic_title: true #Change title dynamically.
@@ -28,20 +29,20 @@ scrolling:
 # Font config
 font:
   normal:
-   family: Misc Fixed 
-   style: Regular
-  size: 30.0
+   family: Terminus
+   style: Bold
+  size: 18.0
 
 # Colors 
 colors:
   primary:
-    background: '#ffffff'
-    foreground: '#000000'
+    background: '#000000'
+    foreground: '#ffffff'
   cursor:
-    text: '#000000'
+    text: '#ffffff'
     cursor: '#b266ff'
   vi_mode_cursor:
-    text: '#000000'
+    text: '#ffffff'
     cursor: '#b266ff'
   selection:
     text: CellForeground
@@ -63,14 +64,11 @@ colors:
     cyan: '#ff00ff'
     white: '#fafafa'    
 
-# Background opacity
-window.opacity: 0.7
-
 # Key bindings
 key_bindings:
-  - { key: Plus,  mods: Control|Shift, action: IncreaseFontSize }
-  - { key: Minus, mods: Control|Shift, action: DecreaseFontSize }
-  - { key: Q,     mods: Control,       action: Quit }
+  - { key: Minus,   mods: Control,    action: IncreaseFontSize }
+  - { key: Equals,  mods: Control,    action: DecreaseFontSize }
+  - { key: Q,       mods: Control,    action: Quit }
 
 # Debug
 debug:
